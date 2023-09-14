@@ -49,10 +49,8 @@
     position: absolute;
     margin-top: 300px;}
     .icon2 {
-
-    margin-top: 450px;}
-    button {
-
+    margin-top: 350px;}
+    .factory {
     width: 460px;
     height: 62px;
     flex-shrink: 0;
@@ -71,6 +69,16 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;}
+    .cathedral {
+    postion: absolute;
+    width: 460px;
+    height: 62px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    opacity: 0.9;
+    background: rgba(227, 10, 19, 0.90);
+    margin: 700px 0 0 900px;
+    }}
 
 
 </style>
@@ -123,10 +131,15 @@
 
      <div class="cont">
          <img class="icon" src=" {{ url_for('static', filename='Ellipse 1 (1).png') }} " align="left">
-         <button type="button">
+         <button class="factory" type="button">
               <a href="{{ url_for('factory') }} ">Главный корпус Ижевского оружейного завода</a>
          </button>
     </div>
-    <img class="icon2" src=" {{ url_for('static', filename='Ellipse 2.png') }} " align="right">
+    <div class="cont">
+        <img class="icon2" src=" {{ url_for('static', filename='Ellipse 2.png') }} " align="right">
+        <button class="cathedral" type="button">
+              <a href="{{ url_for('cathedral') }} ">Храм святого князя Александра Невского</a>
+         </button>
+    </div>
 </body>
 </html>

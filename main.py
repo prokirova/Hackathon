@@ -15,5 +15,9 @@ def start():
 def factory():
     return render_template('factory.html')
 
+@app.route('/cathedral')
+def cathedral():
+    return render_template('cathedral.html')
+
 if __name__ == '__main__':
     app.run()
