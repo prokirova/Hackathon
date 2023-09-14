@@ -1,4 +1,8 @@
+import os
 from flask import Flask, render_template, request, redirect, url_for
+
+DEBUG = int(os.environ.get("DEBUG", 1))
+PORT = os.environ.get("PORT", 12345)
 
 app = Flask(__name__)
 
@@ -19,5 +23,9 @@ def factory():
 def cathedral():
     return render_template('cathedral.html')
 
+@app.route('/houseoflat')
+def houseoflat():
+    return render_template('houseoflat.html')
+
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=DEBUG, port=PORT, host='0.0.0.0')
