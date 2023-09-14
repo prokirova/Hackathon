@@ -47,7 +47,7 @@
     .icon {
     display: block;
     position: absolute;
-    margin-top: 300px;}
+    margin-top: 200px;}
     .icon2 {
     margin-top: 50px;}
     .factory {
@@ -57,7 +57,7 @@
     border-radius: 20px;
     opacity: 0.9;
     background: rgba(227, 10, 19, 0.90);
-    margin: 750px 700px 0 0;
+    margin: 550px 700px 0 0;
     }
     .cont {
     position: relative;
@@ -84,16 +84,26 @@
     }
     .houseoflat {
     position: absolute;
+    width: 420px;
+    height: 55px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    opacity: 0.9;
+    background: rgba(227, 10, 19, 0.90);
+    margin: 800px 0 0 200px;
+    }
+    .icon4 {
+    margin: 200px 0 0 600px;}
+    .houseofoglob {
+
     width: 460px;
     height: 62px;
     flex-shrink: 0;
     border-radius: 20px;
     opacity: 0.9;
     background: rgba(227, 10, 19, 0.90);
-    margin: 450px 0 0 900px;
+    margin: -400px 0 0 900px;
     }
-    .icon4 {
-    margin: 100px 0 0 600px;}
 
 
 </style>
@@ -158,13 +168,15 @@
     </div>
     <div class="cont">
         <img class="icon3" src=" {{ url_for('static', filename='Ellipse 1 (2).png') }} " align="right">
-
-    </div>
-    <div class="cont">
-        <img class="icon4" src=" {{ url_for('static', filename='Ellipse 2 (1).png') }} " align="right">
         <button class="houseoflat" type="button">
               <a href="{{ url_for('houseoflat') }} ">Дом Захария Лятушевича</a>
          </button>
+    </div>
+    <div class="cont">
+        <img class="icon4" src=" {{ url_for('static', filename='Ellipse 2 (1).png') }} " align="right">
+        <button class="houseofoglob" type="button">
+              <a href="{{ url_for('houseofogloblina') }} ">Дом купца Оглоблина</a>
+        </button>
     </div>
 </body>
 </html>

@@ -27,5 +27,9 @@ def cathedral():
 def houseoflat():
     return render_template('houseoflat.html')
 
+@app.route('/houseofogloblina')
+def houseofogloblina():
+    return render_template('houseofoglob.html')
+
 if __name__ == '__main__':
     app.run(debug=DEBUG, port=PORT, host='0.0.0.0')
