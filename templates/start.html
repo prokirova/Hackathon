@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Открывая Удмуртию</title>
+</head>
+
+<style>
+
+    p {
+    color: #000;
+    font-family: Verdana;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 30px;}
+
+    svg {
+    width: 104.741px;
+    height: 106.089px;
+    transform: rotate(-25.003deg);
+    flex-shrink: 0;
+    fill: #E30A13;}
+
+    .p2 {
+    width: 98.691px;
+    height: 118.694px;
+    transform: rotate(-10.078deg);
+    flex-shrink: 0;
+    fill: #E30A13;}
+
+    h2 {
+    color: #000;
+    font-family: Verdana bold;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 40px;}
+    img {
+    margin-right: 30px;}
+    .line {
+    margin-top: 60px;
+    position: absolute;
+    margin-right: 350px;}
+    .icon {
+    display: block;
+    position: absolute;
+    margin-top: 300px;}
+    .icon2 {
+
+    margin-top: 450px;}
+    button {
+
+    width: 460px;
+    height: 62px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    opacity: 0.9;
+    background: rgba(227, 10, 19, 0.90);
+    margin: 750px 700px 0 0;
+    }
+    .cont {
+    position: relative;}
+    a {
+    color: #FFF;
+    font-family: Verdana;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;}
+
+
+</style>
+<body>
+    <p>
+    <img src="{{ url_for('static', filename='9_11_2023 8_04_06 PM.png') }}" align="left">
+    </p>
+    <p>Тот край, где солнышко лучами ярче светит,</p>
+    <p>Где Италмас цветет и манит нас в луга. </p>
+    <p> Тот край, где счастливы и взрослые, и дети, </p>
+    <p> Все это Родина — Удмуртия моя!  </p>
+    <p>    Ф.Васильев  </p>
+    <p>  </p>
+
+
+
+    <p>Мы рады приветствовать вас на первой странице нашего сайта! Верим, что размещенная на сайте информация будет полезной и интересной. </p>
+    <p>
+    Немного о цели нашего проекта: </p>
+    <p> Каждый город имеет своё начало, но многие люди даже не знают с чего он начинался и как зарождались значимые памятники архитектуры. На нашем сайте вы можете пройти виртуальную экскурсию по самым красивым и значимым архитектурным местам нашего города.
+
+    </p>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="88" height="85" viewBox="0 0 88 85" fill="none">
+      <path d="M8.35568 0.890306L87.4144 59.1653L0.449678 84.9561L8.35568 0.890306Z" fill="#E30A13"/>
+    </svg>
+    <svg class="p2" xmlns="http://www.w3.org/2000/svg" width="85" height="98" viewBox="0 0 85 98" fill="none">
+      <path d="M27.1154 0.151336L84.211 78.3421L0.872732 97.3082L27.1154 0.151336Z" fill="#E30A13"/>
+    </svg>
+    <p>Цель нашего проекта «Арт путешествие по родному краю» сформировать:</p>
+    <p>- познавательную активность подростков, а также более взрослого населения;</p>
+    <p>- вызвать патриотическое чувство любви к своей республике;</p>
+    <p>- сформировать положительное отношение и чувство любви и гордости к своему родному краю. </p>
+    <p>Мы - создатели проекта - Кира и Мария, ученицы 9 и 11 класса одного из лицеев нашего города,  хотим привлечь ваше внимание к красоте архитектурных памятников и увеличить эстетическое, интеллектуальное, творческое, духовное развитие молодежи . </p>
+
+    <p>На нашем сайте у  вас есть возможность посмотреть не только фотографии этих архитектурных объектов, но и  насладиться красотой акварельной живописи. </p>
+    <div>
+        <h2>Наш маршрут:</h2>
+    </div>
+    <img src="{{ url_for('static', filename='Screenshot 2023-09-08 133816.png') }} " align="left" width="831" height="595">
+    <p>1. Ижевский оружейный завод </p>
+    <p>2. Храм святого князя Александра Невского</p>
+    <p>3. Дом Захария Лятушевича</p>
+    <p>4. Дом купца Оглоблина </p>
+    <p>5. Свято-Михайловский собор </p>
+    <p>6. Национальный музей Удмуртской Республики им. Кузебая Герда </p>
+    <p>7. Удмуртский Республиканский Музей Изобразительных Искусств </p>
+    <p>8. Государственный Театр кукол</p>
+    <img class="line" src=" {{ url_for('static', filename='Vector 6 (1).png') }} " align="middle">
+
+     <div class="cont">
+         <img class="icon" src=" {{ url_for('static', filename='Ellipse 1 (1).png') }} " align="left">
+         <button type="button">
+              <a href="{{ url_for('factory') }} ">Главный корпус Ижевского оружейного завода</a>
+         </button>
+    </div>
+    <img class="icon2" src=" {{ url_for('static', filename='Ellipse 2.png') }} " align="right">
+</body>
+</html>

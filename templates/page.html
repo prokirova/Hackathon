@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Открывая Удмуртию</title>
+
+
+</head>
+<style>
+    h1 {
+    width: 1213px;
+    height: 101px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Verdana;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0 0 0 25px;
+    width: fit-content;
+    }
+    h2 {
+    color: #000;
+    font-family: Verdana;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 888px;
+    height: 50px;
+    flex-shrink: 0;
+    margin: 0 0 0 25px;
+    width: fit-content;
+    }
+
+    body {
+    background-image: url({{ url_for('static', filename='3bcf80ac19f207be2dec69231a18ed16.png') }}), lightgray -401.364px 0px / 129.769% 100% no-repeat;}
+
+    button {
+    width: 273px;
+    height: 62px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    opacity: 0.9;
+    background: rgba(227, 10, 19, 0.90);
+    margin: 100px;}
+    a {color: #FFF;
+    font-family: Verdana;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;}
+    
+    .p1 {
+    fill: #E30A13;
+    width: 93.013px;
+    height: 99.592px;
+    transform: rotate(-37.188deg);
+    flex-shrink: 0;
+    margin: 100px 0 0 100px;}
+    .p2 {
+    width: 103.441px;
+    height: 116.516px;
+    transform: rotate(-101.567deg);
+    flex-shrink: 0;
+    margin-left: 75px;}
+    .p3 {
+    width: 106.237px;
+    height: 117.396px;
+    transform: rotate(-56.769deg);
+    flex-shrink: 0;
+    fill: #E30A13;
+    margin-left: 100px;}
+
+    img {
+    float: right;
+    flex-shrink: 0;
+    margin-left: 20px;
+    display: block;}
+    div {
+    width: fit-content;
+    margin: 0;}
+
+</style>
+
+<body>
+    <svg class="p1" xmlns="http://www.w3.org/2000/svg" width="89" height="91" viewBox="0 0 89 91" fill="none">
+        <path d="M0.647286 0.51599L88.3093 39.328L15.199 90.4512L0.647286 0.51599Z" fill="#E30A13"/>
+    </svg>
+    <svg class="p2" xmlns="http://www.w3.org/2000/svg" width="96" height="88" viewBox="0 0 96 88" fill="none">
+        <path d="M0.383414 59.5276L77.3514 0.0825472L95.3923 87.8293L0.383414 59.5276Z" fill="#E30A13"/>
+    </svg>
+    <svg class="p3" xmlns="http://www.w3.org/2000/svg" width="102" height="84" viewBox="0 0 102 84" fill="none">
+      <path d="M0.570432 0.199358L101.974 7.37868L50.2559 83.4704L0.570432 0.199358Z" fill="#E30A13"/>
+    </svg>
+
+    <p> <img src="{{ url_for('static', filename='3bcf80ac19f207be2dec69231a18ed16.png') }}" align="right"/>
+        <h1>Открывая Удмуртию</h1>
+        <h2>проект “Арт-путешествие по родному краю (г. Ижевск, УР)”</h2>
+    </p>
+    <div>
+        <form>
+          <button type="button">
+              <a href="{{ url_for('start') }} "> Вперед </a>
+          </button>
+        </form>
+    </div>
+
+</body>
+</html>
