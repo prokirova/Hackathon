@@ -31,5 +31,21 @@ def houseoflat():
 def houseofogloblina():
     return render_template('houseofoglob.html')
 
+@app.route('/michaelcathedral')
+def michaelcathedral():
+    return render_template('michaelcathedral.html')
+
+@app.route('/nationalmuseum')
+def nationalmuseum():
+    return render_template('nationalmuseum.html')
+
+@app.route('/museumart')
+def museumart():
+    return render_template('museumart.html')
+
+@app.route('/theatre')
+def theatre():
+    return render_template('theatre.html')
+
 if __name__ == '__main__':
     app.run(debug=DEBUG, port=PORT, host='0.0.0.0')
