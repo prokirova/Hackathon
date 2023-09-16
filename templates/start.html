@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Открывая Удмуртию</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='3bcf80ac19f207be2dec69231a18ed16 (1).jpg') }}">
 </head>
 
 <style>
@@ -144,6 +145,23 @@
     background: rgba(227, 10, 19, 0.90);
     margin: -300px 0px 0px 900px;
     }
+    .icon8{
+    margin-bottom: -100px;}
+    .btw {
+    width: 153.675px;
+    height: 163.003px;
+    transform: rotate(-49.644deg);
+    flex-shrink: 0;
+    fill: #E30A13;
+    margin: 100px 0 0 200px;}
+    .btw2 {
+    width: 160.897px;
+    height: 185.829px;
+    transform: rotate(-21.142deg);
+    flex-shrink: 0;
+    fill: #E30A13;
+    margin: 100px 0 0 0;}
+
 
 
 </style>
@@ -183,7 +201,7 @@
     <div>
         <h2>Наш маршрут:</h2>
     </div>
-    <img src="{{ url_for('static', filename='Screenshot 2023-09-08 133816.png') }} " align="left" width="831" height="595">
+    <div style="position:relative;overflow:hidden;float:left;"><a href="https://yandex.ru/maps/44/izhevsk/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Ижевск</a><a href="https://yandex.ru/maps/44/izhevsk/?ll=53.211801%2C56.851459&mode=routes&rtext=56.844480%2C53.185777~56.844068%2C53.200970~56.845679%2C53.206565~56.841506%2C53.209270~56.849569%2C53.205296~56.853459%2C53.215475~56.861132%2C53.205551~56.848290%2C53.222285&rtt=mt&ruri=ymapsbm1%3A%2F%2Forg%3Foid%3D1030597328~ymapsbm1%3A%2F%2Forg%3Foid%3D1025679406~ymapsbm1%3A%2F%2Forg%3Foid%3D123339606441~ymapsbm1%3A%2F%2Forg%3Foid%3D77645810401~ymapsbm1%3A%2F%2Forg%3Foid%3D1014927100~ymapsbm1%3A%2F%2Forg%3Foid%3D1036574953~ymapsbm1%3A%2F%2Forg%3Foid%3D1041039813~ymapsbm1%3A%2F%2Forg%3Foid%3D1052505688&utm_medium=mapframe&utm_source=maps&z=14.07" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=53.211801%2C56.851459&mode=routes&rtext=56.844480%2C53.185777~56.844068%2C53.200970~56.845679%2C53.206565~56.841506%2C53.209270~56.849569%2C53.205296~56.853459%2C53.215475~56.861132%2C53.205551~56.848290%2C53.222285&rtt=mt&ruri=ymapsbm1%3A%2F%2Forg%3Foid%3D1030597328~ymapsbm1%3A%2F%2Forg%3Foid%3D1025679406~ymapsbm1%3A%2F%2Forg%3Foid%3D123339606441~ymapsbm1%3A%2F%2Forg%3Foid%3D77645810401~ymapsbm1%3A%2F%2Forg%3Foid%3D1014927100~ymapsbm1%3A%2F%2Forg%3Foid%3D1036574953~ymapsbm1%3A%2F%2Forg%3Foid%3D1041039813~ymapsbm1%3A%2F%2Forg%3Foid%3D1052505688&z=14.07" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
     <p>1. Ижевский оружейный завод </p>
     <p>2. Храм святого князя Александра Невского</p>
     <p>3. Дом Захария Лятушевича</p>
@@ -206,6 +224,12 @@
               <a href="{{ url_for('cathedral') }} ">Храм святого князя Александра Невского</a>
          </button>
     </div>
+    <svg class="btw" xmlns="http://www.w3.org/2000/svg" width="147" height="119" viewBox="0 0 147 119" fill="none">
+        <path d="M0.409423 0.239582L146.666 22.7217L54.1584 118.4L0.409423 0.239582Z" fill="#E30A13"/>
+    </svg>
+    <svg class="btw2" xmlns="http://www.w3.org/2000/svg" width="128" height="160" viewBox="0 0 128 160" fill="none">
+        <path d="M14.4074 0.913465L127.159 102.817L0.0132693 159.824L14.4074 0.913465Z" fill="#E30A13"/>
+    </svg>
     <div class="cont">
         <img class="icon3" src=" {{ url_for('static', filename='Ellipse 1 (2).png') }} " align="right">
         <button class="houseoflat" type="button">
@@ -218,6 +242,7 @@
               <a href="{{ url_for('houseofogloblina') }} ">Дом купца Оглоблина</a>
         </button>
     </div>
+
     <div class="cont">
         <img class="icon5" src=" {{ url_for('static', filename='Ellipse 1 (3).png') }} " align="right">
         <button class="michaelcathedral" type="button">
@@ -230,6 +255,7 @@
               <a href="{{ url_for('nationalmuseum') }} ">Национальный музей Удмуртской Республики им. Кузебая Герда</a>
         </button>
     </div>
+
     <div class="cont">
         <img class="icon7" src=" {{ url_for('static', filename='Ellipse 1 (5).png') }} " align="left">
         <button class="museumart" type="button">
@@ -242,5 +268,6 @@
               <a href="{{ url_for('theatre') }} ">Государственный Театр Кукол</a>
         </button>
     </div>
+
 </body>
 </html>

@@ -7,8 +7,10 @@ PORT = os.environ.get("PORT", 12345)
 app = Flask(__name__)
 
 
+
 @app.route('/')
 def index():
+
     return render_template('page.html')
 
 @app.route('/start')
